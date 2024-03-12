@@ -1,14 +1,20 @@
+{% load static %}
+
 <html>
     <head>
+        <link rel="stylesheet" href="{% static 'style.css'%}">
         <title>Words Counter</title>
         <!-- Latest compiled and minified CSS  -->
     </head>
-    <body style="background-color: #f5f8fa;">
-        <a href="/counter">Start<a/>
+    <body>
+        <div class="home_links">
+            <a href="/counter">Counter</a>
+            <a href="/">Home</a>
+        </div>
+        
         <!-- Main Content -->
-        <div class="container">
             {% block content%}
             {% endblock %}
-        </div>
+        
     </body>
 </html>
