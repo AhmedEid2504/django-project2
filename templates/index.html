@@ -4,13 +4,7 @@
         <!-- Latest compiled and minified CSS  -->
     </head>
     <body style="background-color: #f5f8fa;">
-        <h1>Input Your Text Here</h1>
-        <form method="POST" action="counter">
-            {% csrf_token %}
-            <textarea name="text" rows="25" cols="100"></textarea>
-            </br>
-            <input type="submit"  value="Submit"/>
-        </form>
+        <a href="/counter">Start<a/>
         <!-- Main Content -->
         <div class="container">
             {% block content%}

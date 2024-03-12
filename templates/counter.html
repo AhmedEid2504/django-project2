@@ -1,1 +1,9 @@
+<h1>Input Your Text Here</h1>
+<form method="POST" action="counter">
+    {% csrf_token %}
+    <textarea name="text" rows="25" cols="100"></textarea>
+    </br>
+    <input type="submit"  value="Submit"/>
+</form>
+
 <h1>The Amount Of Words You Typed is: {{amount}}</h1>
